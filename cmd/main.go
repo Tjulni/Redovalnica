@@ -54,6 +54,7 @@ func main(){
 			redovalnica.IzpisVsehOcen(stud)
 
 			fmt.Println("\nKončni uspeh:")
+			redovalnica.IzpisiKoncniUspeh(stud)
 
 			return nil
 		},

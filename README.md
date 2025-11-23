@@ -16,16 +16,31 @@ Konfiguracijske spremenljivke:
 ### Example usage
 
 ```go
-redovalnica.StOcen = 2
+redovalnica.StOcen = 4
 redovalnica.MinOcena = 1
 redovalnica.MaxOcena = 10
 
-studenti := map[string]redovalnica.Student{
-    "001": {Ime: "Luka", Priimek: "Zajc"},
+stud := map[string]redovalnica.Student{
+    "123": {Ime: "Ana", Priimek: "Kovač"},
+    "456": {Ime: "Marko", Priimek: "Novak"},
 }
 
-redovalnica.DodajOceno(studenti, "001", 7)
-redovalnica.DodajOceno(studenti, "001", 9)
+redovalnica.DodajOceno(stud, "123", 8)
+redovalnica.DodajOceno(stud, "123", 10)
+redovalnica.DodajOceno(stud, "456", 4)
 
-redovalnica.IzpisVsehOcen(studenti)
-redovalnica.IzpisiKoncniUspeh(studenti)
+fmt.Println("Ocene:")
+redovalnica.IzpisVsehOcen(stud)
+
+fmt.Println("\nKončni uspeh:")
+redovalnica.IzpisiKoncniUspeh(stud)
+```
+Redovalnica generira naslednje vrednosti
+Ocene:
+REDOVALNICA:
+123 - Ana Kovač: [8 10]
+456 - Marko Novak: [4]
+
+Končni uspeh:
+Ana Kovač: povprečna ocena 0.0 -> Neuspešen študent
+Marko Novak: povprečna ocena 0.0 -> Neuspešen študent
