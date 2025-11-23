@@ -13,9 +13,7 @@ Konfiguracijske spremenljivke:
 - `MinOcena` – najmanjša dovoljena ocena,
 - `MaxOcena` – največja dovoljena ocena.
 
-### 📌 Example usage (kot Go datoteka za Godoc)
-
-Ustvari datoteko `example_test.go` v paketu `redovalnica`:
+### 📌 Example usage
 
 ```go
 redovalnica.StOcen = 2
