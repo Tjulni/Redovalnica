@@ -18,24 +18,16 @@ Konfiguracijske spremenljivke:
 Ustvari datoteko `example_test.go` v paketu `redovalnica`:
 
 ```go
-package redovalnica_test
+redovalnica.StOcen = 2
+redovalnica.MinOcena = 1
+redovalnica.MaxOcena = 10
 
-import (
-    "github.com/Tjulni/Redovalnica/redovalnica"
-)
-
-func Example() {
-    redovalnica.StOcen = 2
-    redovalnica.MinOcena = 1
-    redovalnica.MaxOcena = 10
-
-    studenti := map[string]redovalnica.Student{
-        "001": {Ime: "Luka", Priimek: "Zajc"},
-    }
-
-    redovalnica.DodajOceno(studenti, "001", 7)
-    redovalnica.DodajOceno(studenti, "001", 9)
-
-    redovalnica.IzpisVsehOcen(studenti)
-    redovalnica.IzpisiKoncniUspeh(studenti)
+studenti := map[string]redovalnica.Student{
+    "001": {Ime: "Luka", Priimek: "Zajc"},
 }
+
+redovalnica.DodajOceno(studenti, "001", 7)
+redovalnica.DodajOceno(studenti, "001", 9)
+
+redovalnica.IzpisVsehOcen(studenti)
+redovalnica.IzpisiKoncniUspeh(studenti)
