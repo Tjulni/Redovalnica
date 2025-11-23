@@ -35,7 +35,8 @@ redovalnica.IzpisVsehOcen(stud)
 fmt.Println("\nKončni uspeh:")
 redovalnica.IzpisiKoncniUspeh(stud)
 ```
-Redovalnica generira naslednje vrednosti
+Redovalnica generira naslednje vrednosti:
+```
 Ocene:
 REDOVALNICA:
 123 - Ana Kovač: [8 10]
@@ -44,3 +45,4 @@ REDOVALNICA:
 Končni uspeh:
 Ana Kovač: povprečna ocena 0.0 -> Neuspešen študent
 Marko Novak: povprečna ocena 0.0 -> Neuspešen študent
+```
