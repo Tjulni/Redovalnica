@@ -1,5 +1,17 @@
-# Redovalnica
----
+# Redovalnica – Go modul
+
+Modul `redovalnica` omogoča upravljanje ocen študentov.  
+Primeren je za uporabo v majhnih CLI aplikacijah ali kot del večjega sistema.
+
+Modul ponuja:
+- dodajanje ocen,
+- izpis vseh ocen,
+- izračun in izpis končnega uspeha.
+
+Konfiguracijske spremenljivke:
+- `StOcen` – najmanjše število ocen za izračun povprečja,
+- `MinOcena` – najmanjša dovoljena ocena,
+- `MaxOcena` – največja dovoljena ocena.
 
 ### 📌 Example usage (kot Go datoteka za Godoc)
 
@@ -26,9 +38,4 @@ func Example() {
 
     redovalnica.IzpisVsehOcen(studenti)
     redovalnica.IzpisiKoncniUspeh(studenti)
-
-    // Output:
-    // REDOVALNICA:
-    // 001 - Luka Zajc: [7 9]
-    // Luka Zajc: povprečna ocena 8.0 -> Povprečen študent
 }
