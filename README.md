@@ -13,7 +13,7 @@ Konfiguracijske spremenljivke:
 - `MinOcena` – najmanjša dovoljena ocena,
 - `MaxOcena` – največja dovoljena ocena.
 
-### 📌 Example usage
+### Example usage
 
 ```go
 redovalnica.StOcen = 2
